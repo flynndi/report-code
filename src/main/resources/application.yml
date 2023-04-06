@@ -1,0 +1,14 @@
+quarkus:
+  http:
+    port: 8080
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: 123456
+    reactive:
+      url: vertx-reactive:postgresql://localhost:5432/authorization_server
+  hibernate-orm:
+    log:
+      sql: true
+  log:
+    level: DEBUG
